@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ashirt">
+    <ImageView
+        android:id="@+id/header_background"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:transitionName="background_image_transition"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rose"
+        tools:targetApi="lollipop" />
+
+    <ImageView
+        android:id="@+id/down_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="36dp"
+        android:scaleX="1"
+        android:src="@drawable/ic_baseline_keyboard_arrow_down_24"
+        app:layout_constraintEnd_toEndOf="@id/header_background"
+        app:layout_constraintTop_toTopOf="@id/header_background" />
+
+    <HorizontalScrollView
+        android:id="@+id/scroll_view"
+        android:scrollbars="none"
+        android:layout_width="410dp"
+        android:layout_height="71dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_background"
+        app:layout_constraintVertical_bias="0.118"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="25dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/rose" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Hello"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="25dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/rose" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Hello"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="25dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/rose" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Hello"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="25dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/rose" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Hello"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="25dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/rose" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Hello"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="25dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/rose" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Hello"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/third_scrollview"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/scroll_view"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/third_title"
+                android:fontFamily="sans-serif-black"
+                android:text="လားဟူလူမျိုးအကြောင်း"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+                <RatingBar
+                    android:id="@+id/second_ratingBar"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:max="5"
+                    android:numStars="5"
+                    android:progressTint="@color/black"
+                    android:rating="4.5"
+                    android:stepSize="0.5"
+                    tools:targetApi="lollipop" />
+                <TextView
+                    android:id="@+id/second_ratingBar_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:text="4.75"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    />
+
+                <TextView
+                    android:id="@+id/second_ratingBar_number2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/open_sans_light"
+                    android:text="(510)"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/about"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="ဖြစ်ပေါ်လာပုံ"
+                android:textColor="@color/black"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/about_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:alpha="0.5"
+                android:fontFamily="@font/open_sans_regular"
+                android:text="မိမိတို့၏ တိုင်းရင်းသားဝတ်စုံကို မိမိကိုယ်တိုင် ဝါစိုက်ပြီး၊ ဝါကြိတ် စသည်ဖြင့် ယက္ကန်းလုပ်ငန်းများကို မိသားစုတိုင်းသားစဉ်မြေးဆက် လက်ဆင့်ကမ်းပေးကြသည်။ ချည်များကိုရရှိနိုင်ရန် အာခါအမျိုးသမီးများသည် ထင်းခုတ်၊ ရေခပ်၊ တောင်ယာသွား/ပြန် လမ်းလျှောက်ရင်း ဝါကိုကျစ်၍ ရသော ချည်နှင့်သာ အထည်ယက်လုပ်ကာ (မြန်) ခေါ်အပင်ဖြင့် အနက်ရောင်ကို ကိုယ်တိုင်အရောင်ဆိုးကြသည်။ အာခါတိုင်းရင်းသားလူမျိုးတို့၏ ဝတ်စားဆင်ယင်မှုအခြေခံအရောင်မှာ အနက်ရောင်ဖြစ်သည်။ မိမိတို့၏ရိုးရာဝတ်စုံကို အမြတ်တနိုးဝတ်ဆင်ကြသည်။ အမျိုးသားများသည် ဘောင်းဘီရှည်၊ အင်္ကျီတို/ရှည် ခေါင်းပေါင်းဆင်မြန်းကြပြီး၊ ဘောင်းဘီတွင် ပန်းထိုးလေ့မရှိ၊ အင်္ကျီ၏ အရှေ့ဘက်တွင်သာ ပန်းထိုးလေ့ရှိသည်။ အမျိုးသမီးများသည် စကတ်တို/ရှည်၊ ဘောင်းဘီ၊ အင်္ကျီတို/ရှည် နှင့် ခေါင်းဆောင်းအမျိုးမျိုးကို ငွေထည်၊ ငွေပြား၊ ပုတီး၊ ကြက်မြီးရောင်စုံဖြင့် စီမံကြသည်။ အမျိုးသမီးများ၏ စကတ်အနောက်ဘက်တွင် အစင်းများပါရှိပြီး ပန်းထိုးလေ့မရှိ။ အင်္ကျီ၏အရှေ့ / အနောက်တွင် ပန်းအလှများ စီမံကြသည်။ အမျိုးသမီးများသည် ခြေစွပ်၊ ခါးပတ်အမြီးများကို ရှေ့တွင်ချ၍ ပိုးချည် သို့မဟုတ် ရောင်စုံချည်ဖြင့် ပန်းထိုးကြသည်။ အာခါတိုင်းရင်းသားလူမျိုးတို့သည် နေရာဒေသကို လိုက်၍သော်လည်းကောင်း၊ အမျိုးအနွယ်ကိုလိုက်၍သော်လည်းကောင်း၊ ခေါင်းပေါင်း၊ ခေါင်းဆောင်းအမျိုးမျိုးတွေ့ရှိနိုင်သည်။ အမျိုးသားများ၏ ခေါင်းပေါင်းကိုကြည့်၍ သာမန်လူနှင့် နတ်ဆရာကိုခွဲခြားသိရှိနိုင်သည်။ အမျိုးသမီးများ၏ ခေါင်းဆောင်းများတွင် ငွေထည်ငွေပြားအမျိုးမျိုးဖြင့် အမြတ်တနိုးဆင်မြန်းလျက် လေးသည်ဟုပင် အမှုမထားကြပေ။ အမျိုးသမီးဝတ်စုံနှင့် အမျိုးသားဝတ်စုံကို လဲလှယ်ဝတ်ဆင်ခြင်းပြုလေ့မရှိပါ။"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/venue_type"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="ပါဝင်ပစ္စည်းများ"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/venue_type_text"
+                android:layout_marginTop="10dp"
+                android:alpha="0.5"
+                android:fontFamily="@font/open_sans_regular"
+                android:text="ခရုခွံ,ငွေဒင်္ါး,ပိတ်စအမဲ,"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/type_of_view"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="ဈေးနှုန်းများ"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/type_of_view_text"
+                android:layout_marginTop="20dp"
+                android:alpha="0.5"
+                android:fontFamily="@font/open_sans_regular"
+                android:text=" လားဟူတိုင်းရင်းသားလူမျိုးတို့သည် နေရာဒေသကို လိုက်၍သော်လည်းကောင်း၊ အမျိုးအနွယ်ကိုလိုက်၍သော်လည်းကောင်း၊ ခေါင်းပေါင်း၊ ခေါင်းဆောင်းအမျိုးမျိုးတွေ့ရှိနိုင်သည်။ အမျိုးသားများ၏ ခေါင်းပေါင်းကိုကြည့်၍ သာမန်လူနှင့် နတ်ဆရာကိုခွဲခြားသိရှိနိုင်သည်။ အမျိုးသမီးများ၏ ခေါင်းဆောင်းများတွင် ငွေထည်ငွေပြားအမျိုးမျိုးဖြင့် အမြတ်တနိုးဆင်မြန်းလျက်"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                />
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:id="@+id/roadmap_parent"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="16dp"
+                android:background="@drawable/custom_button"
+                android:drawableEnd="@drawable/ic_steps"
+                android:drawableRight="@drawable/ic_steps"
+                android:fontFamily="@font/open_sans_extra_bold"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:text="ဝယ်ယူရန်"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

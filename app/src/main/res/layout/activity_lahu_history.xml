@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main"
+    tools:context=".LahuHistory">
+    <ImageView
+        android:id="@+id/header_background"
+        android:layout_width="290dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="4dp"
+        android:transitionName="background_image_transition"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/lahugp1"
+        tools:targetApi="lollipop" />
+
+    <ImageView
+        android:id="@+id/down_arrow"
+        android:layout_width="32dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="16dp"
+
+        android:scaleX="1"
+        android:src="@drawable/arrow_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.039"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/third_scrollview"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header_background"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/third_title"
+                android:fontFamily="@font/open_sans_extra_bold"
+                android:text="The History of La-hu"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+                <RatingBar
+                    android:id="@+id/second_ratingBar"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:max="5"
+                    android:numStars="5"
+                    android:progressTint="@color/colorAccent"
+                    android:rating="4.5"
+                    android:stepSize="0.5"
+                    tools:targetApi="lollipop" />
+                <TextView
+                    android:id="@+id/second_ratingBar_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:text="4.75"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp"
+                    />
+
+                <TextView
+                    android:id="@+id/second_ratingBar_number2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/open_sans_light"
+                    android:text="(510)"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp"
+                    />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/about"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="About"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/about_text"
+                android:layout_marginTop="10dp"
+                android:alpha="0.5"
+                android:fontFamily="@font/open_sans_regular"
+                android:text="\t\tလားဟူလူမျိုးသည် တရုတ်ပြည်တွင် ၅၉  ရာခိုင်နှုန်း၊   မြန်မာပြည်တွင် ၂၉ ရာခိုင်နှုန်း၊ ထိုင်းနိုင်ငံတွင် ၁ဝ ရာခိုင်နှုန်းနှင့် လာအိုနိုင်ငံ တွင်   နှစ်ရာခိုင်နှုန်း   နေထိုင်ကြသည်ဟု ခန့်မှန်းရသည်။    လားဟူလူမျိုးတို့သည် ဆင်းသက်လာပုံသော်လည်းကောင်း၊ အခြား လူမျိုးကြီး၏ နယ်မြေကျူးကျော်မှုကို သော် လည်းကောင်း      နေထိုင်ရာဒေသကွဲပြား ခြားနားခဲ့သည်။
+
+လားဟူလူမျိုးတို့၏ ဆင်းသက်လာပုံမှာ သမိုင်းသုတေသီတို့ဖော်ပြချက်အရ   တရုတ် ပြည်ကြီး  အနောက်မြောက်ဘက်  ကန်ဆူ ပြည်နယ်မှ ဘီစီခရစ်နှစ် ၈-၅ အထိ နေခဲ့ပြီး ထိုမှတစ်ဆင့် အနောက်ဘက် ချင်းဟိုင်း၊ စီချွမ်နှင့် ယူနန်ပြည်နယ်သို့ ရောက်လာခြင်း ဖြစ်သည်။  ယူနန်မှတစ်ဆင့်  မြန်မာပြည်၊ လာအိုနိုင်ငံ၊ ထိုင်းနိုင်ငံများသို့ ရောက်ရှိသွား ခြင်းဖြစ်သည်။
+
+လားဟူတိုင်းရင်းသားတို့သည် ကာလ ကြာလာသောအခါ  မဲခေါင်မြစ်နှင့် သံလွင် မြစ်အကြား မြောက်မှတောင်သို့ ဆင်းသက် လာသည်။   မြန်မာနိုင်ငံသို့ရောက်ရှိလာပြီး ရှမ်းပြည်နယ်(အရှေ့ပိုင်း)    ကျိုင်းတုံမြို့နှင့် ပတ်ဝန်းကျင်၌လည်းကောင်း၊ ရှမ်းပြည်နယ် (တောင်ပိုင်း)နမ့်စမ်မြို့ပတ်ဝန်းကျင်၌လည်းကောင်း၊    ရှမ်းပြည်နယ်(မြောက်ပိုင်း)တွင် လားရှိုးမြို့ပတ်ဝန်းကျင်၌  လည်းကောင်း အခြေချဝင်ရောက်နေထိုင်လာကြသည်။"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"
+                />
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

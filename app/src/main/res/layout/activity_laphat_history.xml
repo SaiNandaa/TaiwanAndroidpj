@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/main"
+    tools:context=".LaphatHistory">
+    <ImageView
+        android:id="@+id/header_background"
+        android:layout_width="290dp"
+        android:layout_height="240dp"
+        android:layout_marginTop="4dp"
+        android:transitionName="background_image_transition"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/teacuprm"
+        tools:targetApi="lollipop" />
+
+    <ImageView
+        android:id="@+id/down_arrow"
+        android:layout_width="32dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="16dp"
+
+        android:scaleX="1"
+        android:src="@drawable/arrow_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.039"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/third_scrollview"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="15dp"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/header_background"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/third_title"
+                android:fontFamily="@font/open_sans_extra_bold"
+                android:text="The History of Tea leaves"
+                android:textColor="@color/colorPrimary"
+                android:textSize="24sp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+                <RatingBar
+                    android:id="@+id/second_ratingBar"
+                    style="?android:attr/ratingBarStyleSmall"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:max="5"
+                    android:numStars="5"
+                    android:progressTint="@color/colorAccent"
+                    android:rating="4.5"
+                    android:stepSize="0.5"
+                    tools:targetApi="lollipop" />
+                <TextView
+                    android:id="@+id/second_ratingBar_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:fontFamily="@font/open_sans_bold"
+                    android:text="4.75"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp"
+                    />
+
+                <TextView
+                    android:id="@+id/second_ratingBar_number2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/open_sans_light"
+                    android:text="(510)"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="15sp"
+                    />
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/about"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/open_sans_bold"
+                android:text="About"
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:id="@+id/about_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:alpha="0.5"
+                android:fontFamily="@font/open_sans_regular"
+                android:text="လက်ဖက် ဟုပြောလျှင် ကမ္ဘာတဝှမ်း မသိသူမရှိလောက်အောင် သုံးစွဲလျက်ရှိသော ဖျော်ရည် ကုန်ကြမ်းတမျိုးပင် ဖြစ်ပေသည်။ အရှေ့တောင်အာရှနိုင်ငံရှိ လက်ဖက်စိုက်ပျိုးသော နိုင်ငံများတွင် မြန်မာနိုင်ငံသည် တခုအပါအဝင် ဖြစ်သော်လည်း မြန်မာ့လက်ဖက်သမိုင်းကို သိရှိမှတ်တမ်းတင်သူ နည်းပါးလှသည်။ ကမ္ဘာ့လက်ဖက်သမိုင်းအရ တရုတ်ပြည်သည် ဘီစီ ၂၅၀၀ ခန့်တွင် လက်ဖက်ကို စီးပွားဖြစ် စိုက်ပျိုးထုတ်လုပ်ခဲ့သည့် ရှေးအကျဆုံးနိုင်ငံဟု သမိုင်းအထောက်အထား အားဖြင့်လည်းကောင်း၊ ဒဏ္ဍာရီပုံပြင် အားဖြင့်လည်းကောင်း ဖော်ပြခဲ့ကြပါသည်။ လက်ဖက်ပင်၏ သက်တမ်းများမှလည်း မြန်မာနိုင်ငံတွင် လက်ဖက်ပင် စတင်ရှိခဲ့သော ခုနှစ်သက္ကရာဇ်ကို ခန့်မှန်းတွက်ချက်နိုင်သည်။ မြန်မာနိုင်ငံတွင် ရှေးအကျဆုံးလက်ဖက်ပင်မှာ နှစ်တထောင်သက်တမ်းရှိပြီး ဝကိုယ်ပိုင်အုပ်ချုပ်ခွင့် အထူးဒေသတွင် ထိန်းသိမ်းထားလျက်ရှိသည်ဟု သိရပါသည်။  ဝပြည်နယ်ရှိလက်ဖက်ပင်၏သက်တမ်း နှစ်တထောင်ရှိခဲ့ခြင်းသည် အေဒီ-၁၀ ရာစုနှစ်ကတည်းက လက်ဖက်ပင် စရှိခဲ့ကြောင်း ဖော်ပြနေခြင်းဖြစ်သည်။ ရှမ်းပြည်နယ် အရှေ့ပိုင်း ကျိုင်းတုံမြို့နယ် ဝမ်ဆိုင်းကျေးရွာအုပ်စု၊ ဝမ်ဆိုင်းရွာ တစ်ဝိုက်တွင် နှစ်ပေါင်း ရှစ်ရာခန့် သက်တမ်းရှိသော ရှေးဟောင်းလက်ဖက်ခင်းကြီးများ တွေ့ရှိရပြီး နာမည်ကျော် ဝမ်ဆိုင်းလက်ဖက် ကို ထုတ်လုပ်လျက်ရှိသည်။ တရုတ်နိုင်ငံတွင် နှစ်တစ်ထောင့်နှစ်ရာ သက်တမ်းရှိ လက်ဖက်ပင် ရှိသော်လည်း တစ်ပင်တည်းသာဖြစ်ပြီး ရှမ်းပြည်နယ် အရှေ့ပိုင်းတွင် တွေ့ရသော သက်တမ်းရင့် လက်ဖက်ပင်ကြီးများမှာ အရေအတွက် ထောင်ချီ ရှိသည့် ရှေးဟောင်းလက်ဖက်စိုက်ခင်းကြီးများ ပုံစံ တွေ့ရခြင်းဖြစ်သဖြင့် စီးပွားဖြစ် လက်ဖက် အကြီးအကျယ်စိုက်ပျိုးမှုမှာ ကမ္ဘာပေါ်တွင် မြန်မာနိုင်ငံ၊ ရှမ်းပြည်နယ်က တရုတ်နိုင်ငံ ဆစ်ဆောင်ပန်းနားဒေသထက် ပိုမို ရှေးကျဖွယ်ရာ ရှိသည်။ ရှမ်းပြည်နယ်အရှေ့ပိုင်းနေ အန် မျိုးနွယ်စုဝင် တိုင်းရင်းသားတို့သည် လွန်ခဲ့သည့် နှစ်ပေါင်း ခြောက်ရာ ခန့်ကပင် လက်ဖက်စို ပြုလုပ် စားသုံးခဲ့ကြကြောင်း အထောက်အထားများ တွေ့ရှိပြီး ဖြစ်သည်။ ထို့ကြောင့်ပင် လက်ဖက်စို၊ လက်ဖက်အခါးခြောက်၊ လက်ဖက်အချိုခြောက် မျိုးစုံလင်ကာ ရှေးဟောင်းလက်ဖက်စိုက်ခင်းကြီးများရှိနေသော၊ လက်ဖက် ယာဉ်ကျေးမှုများ အစုံအလင် တွေ့ရှိ ထွန်းကားလျက်ရှိသော၊ မြန်မာ့လက်ဖက်ယဉ်ကျေးမှုသည် ကမ္ဘာတွင် ထူးခြားလှပေသည်။ "
+                android:textColor="@color/colorPrimary"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
